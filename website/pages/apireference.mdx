@@ -1,0 +1,50 @@
+---
+title: "Api"
+description: "How to use the library with Next.js"
+category: "Framework guides"
+---
+
+# API Reference
+
+Here’s the API Reference formatted nicely according to your style:
+
+````mdx
+## API Reference
+
+#### `icon1`, `icon2`, `icon3`, `DockOption`, `DockItems`, `colorIcon` Props
+
+```jsx
+<Dock
+  icon1={<HomeIcon />}
+  icon2={<SearchIcon />}
+  icon3={<UserIcon />}
+  DockOption="right"
+  DockItems={["Item 1", "Item 2"]}
+  colorIcon={{ color: "red" }}
+/>
+```
+````
+
+| Parameter    | Type            | Description                                                                         |
+| :----------- | :-------------- | :---------------------------------------------------------------------------------- |
+| `icon1`      | `ReactNode`     | **Required**. The first icon to use.                                                |
+| `icon2`      | `ReactNode`     | **Required**. The second icon to use.                                               |
+| `icon3`      | `ReactNode`     | **Required**. The third icon to use.                                                |
+| `DockOption` | `string`        | **Required**. The dock option position.                                             |
+| `DockItems`  | `Array<string>` | **Required**. A list of items in the dock.                                          |
+| `colorIcon`  | `object`        | **Optional**. Customizes the icon colors. If not provided, default colors are used. |
+
+#### Example
+
+```jsx
+<Dock
+  icon1={<HomeIcon />}
+  icon2={<SearchIcon />}
+  icon3={<UserIcon />}
+  DockOption="right"
+  DockItems={["Item 1", "Item 2"]}
+  colorIcon={{ color: "red" }}
+/>
+```
+
+This component renders a dock with three icons and a list of items. The icon color can be customized using the `colorIcon` prop. If no `colorIcon` is passed, the default icon styles will be used.
