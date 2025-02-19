@@ -6,4 +6,7 @@ const withNextra = require("nextra")({
   },
 });
 
-module.exports = withNextra();
+module.exports = {
+  ...withNextra(),
+  output: "export", // Esto genera archivos estáticos en `out/`
+};
