@@ -1,8 +1,8 @@
 <div align="center">
-  <a href="https://toast.pheralb.dev">
+  <a href="https://">
     <img
-      src="https://toast.pheralb.dev/images/logo_svg.svg"
-      alt="@pheralb/toast"
+      src="./library/src/assets/dockly.png"
+      alt="@watercubz/dockly"
       height="60"
     />
   </a>
@@ -13,9 +13,9 @@
     </b>
   </p>
 
-<a href="https://toast.pheralb.dev/">Documentation</a>
+<a href="https://dockly.vercel.app/">Documentation</a>
 <span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
-<a href="https://toast.pheralb.dev/#getting-started">Getting Started</a>
+<a href="dockly.vercel.app/#getting-started">Getting Started</a>
 <span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
 <a href="#-contributing">Contribute</a>
 <span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
