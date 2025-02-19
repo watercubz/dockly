@@ -1,22 +1,19 @@
 {
-  "name": "nextra-docs-template",
+  "name": "Dockly",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Dockly is a React component library for building beautiful and accessible user interfaces.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
-  },
-  "author": "Shu Ding <g@shud.in>",
+
+  "author": "watercubz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/watercubz/dockly/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://dockly.vercel.app",
   "dependencies": {
     "@theguild/remark-npm2yarn": "^0.3.3",
     "next": "^13.0.6",
