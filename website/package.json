@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/watercubz/dockly/issues"
   },
-  "homepage": "https://dockly.vercel.app",
+  "homepage": "https://dockly-docs.vercel.app",
   "dependencies": {
     "@theguild/remark-npm2yarn": "^0.3.3",
     "next": "^13.0.6",
