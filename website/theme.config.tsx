@@ -7,9 +7,8 @@ const config: DocsThemeConfig = {
     link: "https://github.com/watercubz/dockly",
   },
 
-  docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
   footer: {
-    text: "MIT 202% © Dockly",
+    text: "MIT 2025 © Dockly",
   },
 };
 
