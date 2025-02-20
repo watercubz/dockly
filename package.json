@@ -1,13 +1,18 @@
 {
   "name": "@watercubz/dockly",
-  "private": false,
-  "version": "1.0.0",
-  "type": "module",
+"private": false,
+"version": "1.0.0",
+"packageManager": "pnpm@9.15.0",
+"engines": {
+    "node": ">=20"
+  },
+"type": "module",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
     "dev": "vite",
+    "dev:docs": "turbo dev --filter=@watercubz/dockly-website",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -16,9 +21,11 @@
     "@tailwindcss/vite": "^4.0.6",
     "framer-motion": "^12.4.5",
     "lucide-react": "^0.475.0",
+    "next": "^15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwindcss": "^4.0.6"
+    "tailwindcss": "^4.0.6",
+    "turbo": "^2.4.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",

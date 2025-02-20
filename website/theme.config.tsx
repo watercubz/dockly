@@ -6,7 +6,10 @@ const config: DocsThemeConfig = {
   project: {
     link: "https://github.com/watercubz/dockly",
   },
-
+  faviconGlyph: "🐳",
+  banner: {
+    text: "Dockly is in beta. Please report any issues you find.",
+  },
   footer: {
     text: "MIT 2025 © Dockly",
   },
