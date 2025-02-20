@@ -60,13 +60,13 @@ import {
   Hash,
   Tag,
   CodeXml,
-  Paperclip,
   Settings,
   Users,
   BarChart,
   Image,
   Music,
   AppWindowMac,
+  Paperclip,
 } from "lucide-react";
  
 export let DockOption = {
@@ -86,29 +86,33 @@ export let DockOption = {
   Notes: [{ icon: <Music size={18} />, label: "Music Library" }],
 };
 export let DockItems = ["Apps", "Components", "Notes"];
+ 
+export let icons = [
+  <CodeXml size={18} />,
+  <AppWindowMac size={18} />,
+  <Paperclip size={18} />,
+];
 ```
 
 3. Usage:
 
 ```jsx
 // 📃 index.jsx
-import { Dock } from "@watercubz/dockly";
+import { dock } from "@watercubz/dockly";
  
-import { DockOption, DockItems } from "./utils/options";
+import { DockOption, DockItems, icons } from "./utils/options";
  
-export default function Index() {
+export default function MyComponent() {
   return (
-    <>
-      <section className="bg-gray-700">
-        <Dock
-          DockItems={DockItems}
-          DockOption={DockOption}
-          icon1={<CodeXml size={18} />}
-          icon2={<AppWindowMac size={18} />}
-          icon3={<Paperclip size={18} />}
-        />
-      </section>
-    </>
+    <div>
+      <Dock
+        DockItems={DockItems}
+        DockOption={DockOption}
+        icon1={icons[0]}
+        icon2={icons[1]}
+        icon3={icons[2]}
+      />
+    </div>
   );
 }
 ```
