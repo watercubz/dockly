@@ -13,12 +13,13 @@
     </b>
   </p>
 
+
+
+<span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
 <a href="https://dockly-docs.netlify.app/">Documentation</a>
 <span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
-<a href="https://dockly-docs.netlify.app/advance(https://dockly-docs.netlify.app/advanced)">Getting Started</a>
-<span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
 <a href="#-license">License</a>
+<span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
 
 </div>
 
