@@ -148,10 +148,12 @@ pnpm install
 
 ```bash
 # Run only documentation website:
-pnpm dev:docs //website
+pnpm dev:docs
 pnpm dev
 # Build the library:
 pnpm build
+# Build the docs:
+pnpm build && pnpm next export
 
 ```
 
