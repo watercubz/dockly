@@ -88,8 +88,8 @@ export default function Index() {
 
 [`watercubz/dockly`](https://github.com/watercubz/dockly)
 
-- [**Website**](https://github.com/watercubz/dockly/tree/main/website): Nextra + Next.js
-- [**Library**](https://github.com/watercubz/dockly/tree/main/library): React 18
+- [**Website**](https://github.com/watercubz/dockly/tree/master/website): Nextra + Next.js
+- [**Library**](https://github.com/watercubz/dockly/tree/master/library): React 18
 
 1. [Click here to fork](https://github.com/watercubz/dockly/fork) the repository.
 
@@ -121,4 +121,4 @@ pnpm build
 
 ## 📃 License
 
-[MIT License](https://github.com/watercubz/dockly/blob/main/LICENSE) - [**watercubz**](https://watercubz.vercel.app) 2025.
+[MIT License](https://github.com/watercubz/dockly/blob/master/LICENCE) - [**watercubz**](https://watercubz.vercel.app) 2025.
