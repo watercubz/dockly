@@ -148,10 +148,9 @@ pnpm install
 
 ```bash
 # Run only documentation website:
-pnpm dev: //website
-pnpm dev // library (on the main route)
-
-# Build the docs & library:
+pnpm dev:docs //website
+pnpm dev
+# Build the library:
 pnpm build
 
 ```
