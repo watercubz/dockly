@@ -50,7 +50,7 @@ pnpm add @watercubz/dockly
 # Using yarn:
 yarn install @watercubz/dockly
 ```
-2. porivider
+2. Predefined Options:
 ```jsx
 // 📃 options.ts
  
