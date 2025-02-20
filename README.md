@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://">
+  <a href="https://dockly-docs.netlify.app/">
     <img
       src="./library/src/assets/dockly.png"
       alt="@watercubz/dockly"
@@ -9,15 +9,13 @@
   <p />
   <p>
     <b>
-      An accessible notification library for React.
+     Minimalist Dock Library for your React Website
     </b>
   </p>
 
-<a href="https://dockly.vercel.app/">Documentation</a>
+<a href="https://dockly-docs.netlify.app/">Documentation</a>
 <span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
-<a href="dockly.vercel.app/#getting-started">Getting Started</a>
-<span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
-<a href="#-contributing">Contribute</a>
+<a href="https://dockly-docs.netlify.app/advance">Getting Started</a>
 <span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
 <a href="#-license">License</a>
@@ -27,31 +25,12 @@
 <div align="center">
 
 ![React Badge](https://img.shields.io/badge/Library-61DAFB?logo=react&logoColor=000&style=flat)
-![Next.js Badge](https://img.shields.io/badge/Docs-000?logo=nextdotjs&logoColor=fff&style=flat)
-![Vitest Badge](https://img.shields.io/badge/Testing-6E9F18?logo=vitest&logoColor=fff&style=flat)
-![GitHub releases](https://img.shields.io/github/release/pheralb/toast)
-![npm bundle size](https://img.shields.io/bundlephobia/min/%40pheralb%2Ftoast)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fpheralb%2Ftoast%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/pheralb/toast/goto?ref=main)
-![GitHub stars](https://img.shields.io/github/stars/pheralb/toast)
-![GitHub issues](https://img.shields.io/github/issues/pheralb/toast)
+![GitHub stars](https://img.shields.io/github/stars/watercubz/dockly)
+![GitHub issues](https://img.shields.io/github/issues/watercubz/dockly)
 
 </div>
 
-## 🪐 Features
-
-- [x] 🍂 Lightweight.
-- [x] ✅ Accessible.
-- [x] 🎨 Light, dark & system theme mode.
-- [x] ⏲️ Don't close automatically when the user hover over the toast.
-- [x] 🏗️ Customizable toast position.
-- [x] 🍃 Disable transitions if the user has disabled them in the system.
-- [x] 💙 Built completely with Typescript.
-
-## ✨ Inspiration
-
-- [x] 🎨 Notification Design by [**Medusa.js UI** Framework](https://medusajs.com/framework/).
-- [x] 🛠️ Typescript API by [**Sonner**](https://sonner.emilkowal.ski).
-- [x] 🪄 [**Phosphor Icons**](https://phosphoricons.com/) for success, error, warning, info & loading icons.
 
 ## 🚀 Getting Started
 
@@ -62,73 +41,56 @@
 
 ```bash
 # Using npm:
-npm install @pheralb/toast
+npm install @watercubz/dockly
 
 # Using pnpm:
-pnpm add @pheralb/toast
+pnpm add @watercubz/dockly
 
 # Using yarn:
-yarn install @pheralb/toast
+yarn install @watercubz/dockly
 ```
 
-2. Add the toast provider:
-
-```tsx
-// 📃 root.tsx
-
-import { Toaster } from "@pheralb/toast";
-
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <App />
-    <Toaster />
-  </React.StrictMode>
-);
-```
-
-3. Usage:
+2. Usage:
 
 ```jsx
-// 📃 index.tsx
-
-import { toast } from "@pheralb/toast";
-
+// 📃 index.jsx
+import { Dock } from "@watercubz/dockly";
+ 
+import { DockOption, DockItems } from "./utils/options";
+ 
 export default function Index() {
   return (
     <>
-      <button
-        onClick={() =>
-          toast.success({
-            text: "pheralb/toast",
-            description: "✨ A beautiful toast library for React",
-          })
-        }
-      >
-        <span>Render a toast</span>
-      </button>
+      <section className="bg-gray-700">
+        <Dock
+          DockItems={DockItems}
+          DockOption={DockOption}
+          icon1={<CodeXml size={18} />}
+          icon2={<AppWindowMac size={18} />}
+          icon3={<Paperclip size={18} />}
+        />
+      </section>
     </>
   );
 }
 ```
 
 > [!TIP]
-> 📚 Visit the [**Documentation**](https://toast.pheralb.dev/) for more information.
+> 📚 Visit the [**Documentation**](https://dockly-docs.netlify.app/) for more information.
 
 ## 🔭 Roadmap
 
-- [x] 🚗 Add `.loading` variant.
-- [x] 📚 Add support for Astro + React.
-- [x] ✨ Export bundled & minified `.css` file.
-- [x] 🎨 Add support to customize the default styles for greater flexibility and adaptability.
+- [x] 🚗 Add `./options` options file for more configuration.
+- [x] 📚 Add support for React.
 
 ## 🤝 Contributing
 
-[`pheralb/toast`](https://github.com/pheralb/toast) is a monorepo built with [Turbo](https://turbo.build/repo) and it uses:
+[`watercubz/dockly`](https://github.com/watercubz/dockly)
 
-- [**Website**](https://github.com/pheralb/toast/tree/main/website): Next.js 15 + Content-Collections + MDX + shadcn/ui + Lucide + React-Symbols.
-- [**Library**](https://github.com/pheralb/toast/tree/main/library): React 19 with tsup + Lightning CSS + Vitest for testing.
+- [**Website**](https://github.com/watercubz/dockly/tree/main/website): Nextra + Next.js
+- [**Library**](https://github.com/watercubz/dockly/tree/main/library): React 18
 
-1. [Click here to fork](https://github.com/pheralb/toast/fork) the repository.
+1. [Click here to fork](https://github.com/watercubz/dockly/fork) the repository.
 
 2. Install dependencies:
 
@@ -144,26 +106,18 @@ pnpm install
 
 ```bash
 # Run only documentation website:
-pnpm dev:docs
-
-# Run all website + packages:
-pnpm dev
+pnpm dev: //website
+pnpm dev // library (on the main route)
 
 # Build the docs & library:
 pnpm build
 
-# Test the library:
-pnpm test
 ```
 
-🧑‍🚀 Open [`http://localhost:3000`](http://localhost:4321) to view the **Next.js** documentation website.
+🧑‍🚀 Open [`http://localhost:3000`](http://localhost:3000) to view the **Nextra.js** documentation website.
 
-and create a pull request with your features or fixes 🚀✨.
 
-<a href="https://github.com/pheralb/toast/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=pheralb/toast" />
-</a>
 
 ## 📃 License
 
-[MIT License](https://github.com/pheralb/toast/blob/main/LICENSE) - [**pheralb**](https://pheralb.dev) 2024.
+[MIT License](https://github.com/watercubz/dockly/blob/main/LICENSE) - [**watercubz**](https://watercubz.vercel.app) 2025.
