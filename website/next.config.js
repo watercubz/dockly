@@ -8,5 +8,13 @@ const withNextra = require("nextra")({
 
 module.exports = {
   ...withNextra(),
-  output: "export", // Esto genera archivos estáticos en `out/`
+  output: "standalone", // Esto permite rutas dinámicas
+  rewrites() {
+    return [
+      {
+        source: "/old-route",
+        destination: "/new-route",
+      },
+    ];
+  },
 };
